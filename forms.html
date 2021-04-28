@@ -20,7 +20,38 @@
         </header>
         <section class="conteudo">
             <div class="box">
-            <div></div>
+            <div>
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                <form name="dados" action="foms.html"   method="get"></form>
+                    <div>
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name"/>
+                    </div>
+                    <div>
+                        <label for="adress">Endereço:</label>
+                        <input type="text" id="endereco" />
+                    </div>
+                    <div>
+                        <label for="msg">Cidade:</label>
+                        <textarea id="text"></textarea>
+                    </div>
+                    <div>
+                        <select name="estado" id="IdEstado"></select>
+                        <optgroup>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                    </optgroup>
+                    </fieldset>
+                    </div>
+                </form>
+
+
+            </div>
+
+
+
             <div></div>
             <div></div>
             </div>  
