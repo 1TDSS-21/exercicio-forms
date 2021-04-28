@@ -9,17 +9,163 @@
     <div id="container">
         <div>
             <header id="cabecalho">
-
+                <img src="./img/banner-form-1.jpg" alt="Colagem de animais como gatos e cachorros" title="Animais" class="logo">
             </header>
-        </div>
-        <div>
+            <div>
+                <section class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Notícias</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div>
             <section id="conteudo">
+                <div class="box">
+                    <div>
+                        <fieldset>
+                            <legend>Dados Pessoais</legend>
+                            <div>
+                                <form action="" method="GET">
+                                    <div>
+                                        <label for="IdTxtNm">Nome</label>
+                                        <input type="text" name="txtNm" id="IdTxtNm">
+                                    </div>
+                                    <div>
+                                        <label for="IdTxtEn">Endereço</label>
+                                        <input type="text" name="txtEn" id="IdTxtEn">
+                                    </div>
+                                    <div>
+                                        <label for="IdOpEs">Estado</label>
+                                        <select name="OpEs" id="IdOpEs">
+                                            <option value="RJ">Rio de Janeiro</option>
+                                            <option value="SP">São Paulo</option>
+                                            <option value="BA">Bahia</option>
+                                        </select>
+                                    </div>
+                                </form>
+                            </div>
+                        </fieldset>
+                    </div>
 
+                    <div>
+                        <fieldset>
+                            <legend>Dados Profissionais</legend>
+                            <div>
+                                <form action="" method="GET">
+                                    <label for="">Natureza do Cargo</label>
+                                    <div>
+                                        <input type="radio" name="RadioGe" id="IdRadioGe">
+                                        <label for="IdRadioGe">Gerência</label>
+                                        <input type="radio" name="RadioFina" id="IdRadioFina">
+                                        <label for="IdRadioFina">Financeiro</label>
+                                        <input type="radio" name="RadioRec" id="IdRadioRec">
+                                        <label for="IdRadioRec">Recepção</label>
+                                        <input type="radio" name="RadioAdm" id="IdRadioAdm">
+                                        <label for="IdRadioAdm">Administrativo</label>
+                                        <input type="radio" name="RadioJur" id="IdRadioJur">
+                                        <label for="IdRadioJur">Jurídico</label>
+                                    </div>
+                                    <label for="">Área de Interesse</label>
+                                    <div>
+                                        <input type="checkbox" name="CheckCom" id="IdCheckCom">
+                                        <label for="IdCheckCom">Computação</label>
+                                        <input type="checkbox" name="CheckBio" id="IdCheckBio">
+                                        <label for="IdCheckBio">Biologia</label>
+                                        <input type="checkbox" name="CheckMei" id="IdCheckMei">
+                                        <label for="IdCheckMei">Meio Ambiente</label>
+                                        <input type="checkbox" name="CheckEn" id="IdCheckEn">
+                                        <label for="IdCheckEn">Engenharia</label>
+                                        <input type="checkbox" name="CheckHis" id="IdCheckHis">
+                                        <label for="IdCheckHis">História</label>
+                                    </div>
+                                    <div>
+                                        <label for="IdTxtArea">Mini Currículo</label>
+                                        <textarea name="TxtArea" id="IdTxtArea" cols="30" rows="10"></textarea>
+                                    </div>
+                                </fieldset>
+                                    <input type="submit" name="enviar" id="enviar" value="Enviar">
+                                    <input type="reset" name="limpar" id="limpar" value="Limpar">
+                                </form>
+                            </div>
+                    </div>
+
+                    <div>
+                        <h3>Sistema de Gestão Acadêmica</h3>
+                        <fieldset>
+                            <legend>Manutenção dos Usuários do Sistema Interno</legend>
+                            <div>
+                                <form action="" method="GET">
+                                    <div>
+                                        <label for="IdLogin">Login</label>
+                                        <input type="text" name="login" id="IdLogin">
+                                    </div>
+                                    <div>
+                                        <label for="Idsenha">Senha</label>
+                                        <input type="password" name="senha" id="IdSenha">
+                                    </div>
+                                    <div>
+                                        <label for="">Status</label>
+                                        <select name="OpSta" id="IdOpcSta">
+                                            <option value="Ativo">Ativo</option>
+                                            <option value="Inativo">Inativo</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="">Tipo</label>
+                                        <input type="radio" name="RadioTec" id="IdRadioTec">
+                                        <label for="IdRadioTec">Técnico</label>
+                                        <input type="radio" name="RadioProf" id="IdRadioProf">
+                                        <label for="IdRadioProf">Professor</label>
+                                        <input type="radio" name="RadioAlu" id="IdRadioAlu">
+                                        <label for="IdRadioAlu">Aluno</label>
+                                    </div>
+                                    <div>
+                                        <label for="IdData">Data Criação</label>
+                                        <input type="date" name="Data" id="IdData">
+                                    </div>
+                                    <div>
+                                        <label for="">Perfil</label>
+                                        <input type="radio" name="RadioConv" id="IdRadioConv">
+                                        <label for="IdRadioConv">Convidade</label>
+                                        <input type="radio" name="RadioAdm" id="IdRadioAdm">
+                                        <label for="IdRadioAdm">Administrador</label>
+                                    </div>
+                                    <div>
+                                        <label for="IdTxtArea">Observações</label>
+                                        <textarea name="TxtArea" id="IdTxtArea" cols="30" rows="10"></textarea>
+                                    </div>
+                                    <label for="">Módulos</label>
+                                    <div>
+                                        <input type="checkbox" name="CheckComp" id="IdCheckComp">
+                                        <label for="IdCheckComp">Compra</label>
+                                        <input type="checkbox" name="CheckBib" id="IdCheckBib">
+                                        <label for="IdCheckBib">Biblioteca</label>
+                                        <input type="checkbox" name="CheckAca" id="IdCheckAca">
+                                        <label for="IdCheckAca">Acadêmico</label>
+                                        <input type="checkbox" name="CheckDoc" id="IdCheckDoc">
+                                        <label for="IdCheckDoc">Documentação</label>
+                                        <input type="checkbox" name="CheckRH" id="IdCheckRH">
+                                        <label for="IdCheckRH">Recursos Humanos</label>
+                                    </div>
+                                    <input type="submit" name="Cadastrar" id="IdCadastrar" value="Cadastrar">
+                                    <input type="reset" name="Excluir" id="IdExcluir" value="Excluir">
+                                </form>
+                            </div>
+                        </fieldset>
+                    </div>
+
+                    <div>
+                        
+                    </div>
+                </div>
             </section>
         </div>
         <div>
             <footer id="rodape">
-
+                <p><small>Criado por: <a href="#">Giovana Furlan</a></small></p>
             </footer>
         </div>
     </div>
