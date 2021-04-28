@@ -158,7 +158,60 @@
                     </div>
 
                     <div>
-                        
+                        <fieldset>
+                            <div>
+                                <h3>Métodos de Pagamento</h3>
+                                <p>Campos obrigatórios são seguidos por *:</p>
+                            </div>
+                            <div>
+                                <h4>Informações de Contato</h4>
+                                <fieldset>
+                                    <legend>Título</legend>
+                                    <form action="" method="GET">
+                                        <div>
+                                            <label for="IdRadioAs">Ás</label>
+                                            <input type="radio" name="RadioAs" id="IdRadioAs">
+                                            <label for="IdRadioRei">Rei</label>
+                                            <input type="radio" name="RadioRei" id="IdRadioRei">
+                                            <label for="IdRadioRai">Rainha</label>
+                                            <input type="radio" name="RadioRai" id="IdRadioRai">
+                                        </div>
+                                </fieldset>
+                                        <div>
+                                            <label for="IdTxtNm">Nome*</label>
+                                            <input type="text" name="TxtNm" id="IdTxtNm">
+                                            <label for="IdTxtEm">Email*</label>
+                                            <input type="email" name="TxtEm" id="IdTxtEm">
+                                            <label for="IdTxtSen">Senha*</label>
+                                            <input type="password" name="TxtSen" id="IdTxtSen">
+                                        </div>
+                                        <div>
+                                            <h4>Informações de Pagamento</h4>
+                                            <form action="" method="GET">
+                                                <div>
+                                                    <label for="IdOpCart">Tipo de Cartão</label>
+                                                    <select name="OpCart" id="IdOpCart">
+                                                        <option value="Visa">Visa</option>
+                                                        <option value="Mastercard">MasterCard</option>
+                                                        <option value="Elo">Elo</option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    <label for="IdTxtNrCart">Número do Cartão*</label>
+                                                    <input type="text" name="TxtNrCart" id="IdTxtNrCart">
+                                                </div>
+                                                <div>
+                                                    <label for="IdDataEx">Data de Expiração</label>
+                                                    <input type="date" name="DataEx" id="IdDataEx">
+                                                </div>
+                                                <div>
+                                                    <input type="submit" name="Validar" id="IdValidar" value="Validar Pagamento">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </form>
+                            </div>
+                        </fieldset>
                     </div>
                 </div>
             </section>
