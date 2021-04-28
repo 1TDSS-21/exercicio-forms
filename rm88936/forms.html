@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
+
 <body>
     <div id="container">
         <div>
             <header id="cabecalho">
-                <img src="./img/banner-form-1.jpg" alt="Colagem de animais como gatos e cachorros" title="Animais" class="logo">
+                <img src="./img/banner-form-1.jpg" alt="Colagem de animais como gatos e cachorros" title="Animais"
+                    class="logo">
             </header>
             <div>
                 <section class="menu">
@@ -22,139 +26,74 @@
                 </section>
             </div>
             <div>
-            <section id="conteudo">
-                <div class="box">
-                    <div>
-                        <fieldset>
-                            <legend>Dados Pessoais</legend>
-                            <div>
-                                <form action="" method="GET">
-                                    <div>
-                                        <label for="IdTxtNm">Nome</label>
-                                        <input type="text" name="txtNm" id="IdTxtNm">
-                                    </div>
-                                    <div>
-                                        <label for="IdTxtEn">Endereço</label>
-                                        <input type="text" name="txtEn" id="IdTxtEn">
-                                    </div>
-                                    <div>
-                                        <label for="IdOpEs">Estado</label>
-                                        <select name="OpEs" id="IdOpEs">
-                                            <option value="RJ">Rio de Janeiro</option>
-                                            <option value="SP">São Paulo</option>
-                                            <option value="BA">Bahia</option>
-                                        </select>
-                                    </div>
-                                </form>
-                            </div>
-                        </fieldset>
-                    </div>
-
-                    <div>
-                        <fieldset>
-                            <legend>Dados Profissionais</legend>
-                            <div>
-                                <form action="" method="GET">
+                <section id="conteudo">
+                    <div class="box">
+                        <div>
+                            <fieldset>
+                                <legend>Dados Pessoais</legend>
+                                <div>
+                                    <form action="./dados.html" method="GET">
+                                        <div>
+                                            <label for="idTxtNm">Nome</label>
+                                            <input type="text" name="txtNm" id="idTxtNm"
+                                                oninvalid="setCustomValidity('Este campo deve ser preenchido!')"
+                                                pattern="^[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ]{3,}$" required>
+                                        </div>
+                                        <div>
+                                            <label for="idTxtEn">Endereço</label>
+                                            <input type="text" name="txtEn" id="idTxtEn">
+                                        </div>
+                                        <div>
+                                            <label for="idOpEs">Estado</label>
+                                            <select name="opEs" id="idOpEs">
+                                                <option value="op" selected>Selecione uma opção</option>
+                                                <option value="rj">Rio de Janeiro</option>
+                                                <option value="sp">São Paulo</option>
+                                                <option value="ba">Bahia</option>
+                                            </select>
+                                        </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <div>
+                            <fieldset>
+                                <legend>Dados Profissionais</legend>
+                                <div>
                                     <label for="">Natureza do Cargo</label>
                                     <div>
-                                        <input type="radio" name="RadioGe" id="IdRadioGe">
-                                        <label for="IdRadioGe">Gerência</label>
-                                        <input type="radio" name="RadioFina" id="IdRadioFina">
-                                        <label for="IdRadioFina">Financeiro</label>
-                                        <input type="radio" name="RadioRec" id="IdRadioRec">
-                                        <label for="IdRadioRec">Recepção</label>
-                                        <input type="radio" name="RadioAdm" id="IdRadioAdm">
-                                        <label for="IdRadioAdm">Administrativo</label>
-                                        <input type="radio" name="RadioJur" id="IdRadioJur">
-                                        <label for="IdRadioJur">Jurídico</label>
+                                        <input type="radio" name="radioGe" id="idRadioGe" value="ge">
+                                        <label for="idRadioGe">Gerência</label>
+                                        <input type="radio" name="radioFina" id="idRadioFina" value="fi">
+                                        <label for="idRadioFina">Financeiro</label>
+                                        <input type="radio" name="radioRec" id="idRadioRec" value="rec">
+                                        <label for="idRadioRec">Recepção</label>
+                                        <input type="radio" name="radioAdm" id="idRadioAdm" value="adm">
+                                        <label for="idRadioAdm">Administrativo</label>
+                                        <input type="radio" name="radioJur" id="idRadioJur" value="jur">
+                                        <label for="idRadioJur">Jurídico</label>
                                     </div>
                                     <label for="">Área de Interesse</label>
                                     <div>
-                                        <input type="checkbox" name="CheckCom" id="IdCheckCom">
-                                        <label for="IdCheckCom">Computação</label>
-                                        <input type="checkbox" name="CheckBio" id="IdCheckBio">
-                                        <label for="IdCheckBio">Biologia</label>
-                                        <input type="checkbox" name="CheckMei" id="IdCheckMei">
-                                        <label for="IdCheckMei">Meio Ambiente</label>
-                                        <input type="checkbox" name="CheckEn" id="IdCheckEn">
-                                        <label for="IdCheckEn">Engenharia</label>
-                                        <input type="checkbox" name="CheckHis" id="IdCheckHis">
-                                        <label for="IdCheckHis">História</label>
+                                        <input type="checkbox" name="checkCom" id="idCheckCom">
+                                        <label for="idCheckCom">Computação</label>
+                                        <input type="checkbox" name="checkBio" id="idCheckBio">
+                                        <label for="idCheckBio">Biologia</label>
+                                        <input type="checkbox" name="checkMei" id="idCheckMei">
+                                        <label for="idCheckMei">Meio Ambiente</label>
+                                        <input type="checkbox" name="checkEn" id="idCheckEn">
+                                        <label for="idCheckEn">Engenharia</label>
+                                        <input type="checkbox" name="checkHis" id="idCheckHis">
+                                        <label for="idCheckHis">História</label>
                                     </div>
                                     <div>
-                                        <label for="IdTxtArea">Mini Currículo</label>
-                                        <textarea name="TxtArea" id="IdTxtArea" cols="30" rows="10"></textarea>
+                                        <label for="ddTxtArea">Mini Currículo</label>
+                                        <textarea name="txtArea" id="ddTxtArea" cols="30" rows="10"></textarea>
                                     </div>
-                                </fieldset>
-                                    <input type="submit" name="enviar" id="enviar" value="Enviar">
-                                    <input type="reset" name="limpar" id="limpar" value="Limpar">
-                                </form>
-                            </div>
-                    </div>
-
-                    <div>
-                        <h3>Sistema de Gestão Acadêmica</h3>
-                        <fieldset>
-                            <legend>Manutenção dos Usuários do Sistema Interno</legend>
-                            <div>
-                                <form action="" method="GET">
-                                    <div>
-                                        <label for="IdLogin">Login</label>
-                                        <input type="text" name="login" id="IdLogin">
-                                    </div>
-                                    <div>
-                                        <label for="Idsenha">Senha</label>
-                                        <input type="password" name="senha" id="IdSenha">
-                                    </div>
-                                    <div>
-                                        <label for="">Status</label>
-                                        <select name="OpSta" id="IdOpcSta">
-                                            <option value="Ativo">Ativo</option>
-                                            <option value="Inativo">Inativo</option>
-                                        </select>
-                                    </div>
-                                    <div>
-                                        <label for="">Tipo</label>
-                                        <input type="radio" name="RadioTec" id="IdRadioTec">
-                                        <label for="IdRadioTec">Técnico</label>
-                                        <input type="radio" name="RadioProf" id="IdRadioProf">
-                                        <label for="IdRadioProf">Professor</label>
-                                        <input type="radio" name="RadioAlu" id="IdRadioAlu">
-                                        <label for="IdRadioAlu">Aluno</label>
-                                    </div>
-                                    <div>
-                                        <label for="IdData">Data Criação</label>
-                                        <input type="date" name="Data" id="IdData">
-                                    </div>
-                                    <div>
-                                        <label for="">Perfil</label>
-                                        <input type="radio" name="RadioConv" id="IdRadioConv">
-                                        <label for="IdRadioConv">Convidade</label>
-                                        <input type="radio" name="RadioAdm" id="IdRadioAdm">
-                                        <label for="IdRadioAdm">Administrador</label>
-                                    </div>
-                                    <div>
-                                        <label for="IdTxtArea">Observações</label>
-                                        <textarea name="TxtArea" id="IdTxtArea" cols="30" rows="10"></textarea>
-                                    </div>
-                                    <label for="">Módulos</label>
-                                    <div>
-                                        <input type="checkbox" name="CheckComp" id="IdCheckComp">
-                                        <label for="IdCheckComp">Compra</label>
-                                        <input type="checkbox" name="CheckBib" id="IdCheckBib">
-                                        <label for="IdCheckBib">Biblioteca</label>
-                                        <input type="checkbox" name="CheckAca" id="IdCheckAca">
-                                        <label for="IdCheckAca">Acadêmico</label>
-                                        <input type="checkbox" name="CheckDoc" id="IdCheckDoc">
-                                        <label for="IdCheckDoc">Documentação</label>
-                                        <input type="checkbox" name="CheckRH" id="IdCheckRH">
-                                        <label for="IdCheckRH">Recursos Humanos</label>
-                                    </div>
-                                    <input type="submit" name="Cadastrar" id="IdCadastrar" value="Cadastrar">
-                                    <input type="reset" name="Excluir" id="IdExcluir" value="Excluir">
-                                </form>
-                            </div>
-                        </fieldset>
+                            </fieldset>
+                            <input type="submit" name="enviar" id="enviar" value="Enviar">
+                            <input type="reset" name="limpar" id="limpar" value="Limpar">
+                            </form>
+                        </div>
                     </div>
 
                     <div>
@@ -167,53 +106,120 @@
                                 <h4>Informações de Contato</h4>
                                 <fieldset>
                                     <legend>Título</legend>
-                                    <form action="" method="GET">
+                                    <form action="./dados.html" method="GET">
                                         <div>
-                                            <label for="IdRadioAs">Ás</label>
-                                            <input type="radio" name="RadioAs" id="IdRadioAs">
-                                            <label for="IdRadioRei">Rei</label>
-                                            <input type="radio" name="RadioRei" id="IdRadioRei">
-                                            <label for="IdRadioRai">Rainha</label>
-                                            <input type="radio" name="RadioRai" id="IdRadioRai">
+                                            <label for="idRadioAs">Ás</label>
+                                            <input type="radio" name="radioAs" id="idRadioAs" value="as">
+                                            <label for="idRadioRei">Rei</label>
+                                            <input type="radio" name="radioRei" id="idRadioRei" value="rei">
+                                            <label for="idRadioRai">Rainha</label>
+                                            <input type="radio" name="radioRai" id="idRadioRai" value="rainha">
                                         </div>
                                 </fieldset>
+                                <div>
+                                    <label for="idTxtNm">Nome*</label>
+                                    <input type="text" name="txtNm" id="idTxtNm">
+                                    <label for="idTxtEm">Email*</label>
+                                    <input type="email" name="txtEm" id="idTxtEm">
+                                    <label for="idTxtSen">Senha*</label>
+                                    <input type="password" name="txtSen" id="idTxtSen">
+                                </div>
+                                <div>
+                                    <h4>Informações de Pagamento</h4>
+                                    <form action="" method="GET">
                                         <div>
-                                            <label for="IdTxtNm">Nome*</label>
-                                            <input type="text" name="TxtNm" id="IdTxtNm">
-                                            <label for="IdTxtEm">Email*</label>
-                                            <input type="email" name="TxtEm" id="IdTxtEm">
-                                            <label for="IdTxtSen">Senha*</label>
-                                            <input type="password" name="TxtSen" id="IdTxtSen">
+                                            <label for="idOpCart">Tipo de Cartão</label>
+                                            <select name="OpCart" id="idOpCart">
+                                                <option value="op" selected>Selecione uma opção</option>
+                                                <option value="Visa">Visa</option>
+                                                <option value="Mastercard">MasterCard</option>
+                                                <option value="Elo">Elo</option>
+                                            </select>
                                         </div>
                                         <div>
-                                            <h4>Informações de Pagamento</h4>
-                                            <form action="" method="GET">
-                                                <div>
-                                                    <label for="IdOpCart">Tipo de Cartão</label>
-                                                    <select name="OpCart" id="IdOpCart">
-                                                        <option value="Visa">Visa</option>
-                                                        <option value="Mastercard">MasterCard</option>
-                                                        <option value="Elo">Elo</option>
-                                                    </select>
-                                                </div>
-                                                <div>
-                                                    <label for="IdTxtNrCart">Número do Cartão*</label>
-                                                    <input type="text" name="TxtNrCart" id="IdTxtNrCart">
-                                                </div>
-                                                <div>
-                                                    <label for="IdDataEx">Data de Expiração</label>
-                                                    <input type="date" name="DataEx" id="IdDataEx">
-                                                </div>
-                                                <div>
-                                                    <input type="submit" name="Validar" id="IdValidar" value="Validar Pagamento">
-                                                </div>
-                                            </form>
+                                            <label for="idTxtNrCart">Número do Cartão*</label>
+                                            <input type="text" name="txtNrCart" id="idTxtNrCart">
+                                        </div>
+                                        <div>
+                                            <label for="idDataEx">Data de Expiração</label>
+                                            <input type="date" name="dataEx" id="idDataEx">
+                                        </div>
+                                        <div>
+                                            <input type="submit" name="Validar" id="idValidar"
+                                                value="Validar Pagamento">
                                         </div>
                                     </form>
+                                </div>
+                                </form>
                             </div>
                         </fieldset>
                     </div>
-                </div>
+
+                    <div>
+                        <h3>Sistema de Gestão Acadêmica</h3>
+                        <fieldset>
+                            <legend>Manutenção dos Usuários do Sistema Interno</legend>
+                            <div>
+                                <form action="./dados.html" method="GET">
+                                    <div>
+                                        <label for="idLogin">Login</label>
+                                        <input type="text" name="login" id="idLogin">
+                                    </div>
+                                    <div>
+                                        <label for="idsenha">Senha</label>
+                                        <input type="password" name="senha" id="idSenha">
+                                    </div>
+                                    <div>
+                                        <label for="idOpcSta">Status</label>
+                                        <select name="opSta" id="idOpcSta">
+                                            <option value="Ativo">Ativo</option>
+                                            <option value="Inativo">Inativo</option>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <label for="">Tipo</label>
+                                        <input type="radio" name="radioTec" id="idRadioTec" value="tec">
+                                        <label for="idRadioTec">Técnico</label>
+                                        <input type="radio" name="radioProf" id="idRadioProf" value="prof">
+                                        <label for="idRadioProf">Professor</label>
+                                        <input type="radio" name="radioAlu" id="idRadioAlu" value="aluno">
+                                        <label for="idRadioAlu">Aluno</label>
+                                    </div>
+                                    <div>
+                                        <label for="idData">Data Criação</label>
+                                        <input type="date" name="Data" id="IdData">
+                                    </div>
+                                    <div>
+                                        <label for="">Perfil</label>
+                                        <input type="radio" name="radioConv" id="idRadioConv" value="con">
+                                        <label for="idRadioConv">Convidado</label>
+                                        <input type="radio" name="radioAdm" id="idRadioAdm" value="adm">
+                                        <label for="idRadioAdm">Administrador</label>
+                                    </div>
+                                    <div>
+                                        <label for="idTxtArea">Observações</label>
+                                        <textarea name="TxtArea" id="IdTxtArea" cols="30" rows="10"></textarea>
+                                    </div>
+                                    <label for="">Módulos</label>
+                                    <div>
+                                        <input type="checkbox" name="checkComp" id="idCheckComp">
+                                        <label for="idCheckComp">Compra</label>
+                                        <input type="checkbox" name="checkBib" id="idCheckBib">
+                                        <label for="idCheckBib">Biblioteca</label>
+                                        <input type="checkbox" name="checkAca" id="idCheckAca">
+                                        <label for="idCheckAca">Acadêmico</label>
+                                        <input type="checkbox" name="checkDoc" id="idCheckDoc">
+                                        <label for="idCheckDoc">Documentação</label>
+                                        <input type="checkbox" name="checkRH" id="idCheckRH">
+                                        <label for="idCheckRH">Recursos Humanos</label>
+                                    </div>
+                                    <input type="submit" name="Cadastrar" id="idCadastrar" value="Cadastrar">
+                                    <input type="reset" name="Excluir" id="idExcluir" value="Excluir">
+                                </form>
+                            </div>
+                        </fieldset>
+                    </div>
+            </div>
             </section>
         </div>
         <div>
