@@ -29,7 +29,7 @@
                 <section id="conteudo">
                     <div class="box">
                         <div>
-                            <fieldset>
+                            <fieldset class="dadosP">
                                 <legend>Dados Pessoais</legend>
                                 <div>
                                     <form action="./dados.html" method="GET">
@@ -56,21 +56,31 @@
                             </fieldset>
                         </div>
                         <div>
-                            <fieldset>
+                            <fieldset class="dadosPro">
                                 <legend>Dados Profissionais</legend>
                                 <div>
                                     <label for="">Natureza do Cargo</label>
                                     <div>
-                                        <input type="radio" name="radioGe" id="idRadioGe" value="ge">
-                                        <label for="idRadioGe">Gerência</label>
-                                        <input type="radio" name="radioFina" id="idRadioFina" value="fi">
-                                        <label for="idRadioFina">Financeiro</label>
-                                        <input type="radio" name="radioRec" id="idRadioRec" value="rec">
-                                        <label for="idRadioRec">Recepção</label>
-                                        <input type="radio" name="radioAdm" id="idRadioAdm" value="adm">
-                                        <label for="idRadioAdm">Administrativo</label>
-                                        <input type="radio" name="radioJur" id="idRadioJur" value="jur">
-                                        <label for="idRadioJur">Jurídico</label>
+                                        <div>
+                                            <input type="radio" name="radioGe" id="idRadioGe" value="ge">
+                                            <label for="idRadioGe">Gerência</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="radioFina" id="idRadioFina" value="fi">
+                                            <label for="idRadioFina">Financeiro</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="radioRec" id="idRadioRec" value="rec">
+                                            <label for="idRadioRec">Recepção</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="radioAdm" id="idRadioAdm" value="adm">
+                                            <label for="idRadioAdm">Administrativo</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="radioJur" id="idRadioJur" value="jur">
+                                            <label for="idRadioJur">Jurídico</label>
+                                        </div>
                                     </div>
                                     <label for="">Área de Interesse</label>
                                     <div>
@@ -89,31 +99,39 @@
                                         <label for="ddTxtArea">Mini Currículo</label>
                                         <textarea name="txtArea" id="ddTxtArea" cols="30" rows="10"></textarea>
                                     </div>
+                                    <div>
+                                        <input type="submit" name="enviar" id="enviar" value="Enviar">
+                                        <input type="reset" name="limpar" id="limpar" value="Limpar">
+                                    </div>
                             </fieldset>
-                            <input type="submit" name="enviar" id="enviar" value="Enviar">
-                            <input type="reset" name="limpar" id="limpar" value="Limpar">
                             </form>
                         </div>
                     </div>
 
                     <div>
-                        <fieldset>
+                        <fieldset class="metodosP">
                             <div>
                                 <h3>Métodos de Pagamento</h3>
                                 <p>Campos obrigatórios são seguidos por *:</p>
                             </div>
                             <div>
                                 <h4>Informações de Contato</h4>
-                                <fieldset>
+                                <fieldset class="titulo">
                                     <legend>Título</legend>
                                     <form action="./dados.html" method="GET">
                                         <div>
-                                            <label for="idRadioAs">Ás</label>
-                                            <input type="radio" name="radioAs" id="idRadioAs" value="as">
-                                            <label for="idRadioRei">Rei</label>
-                                            <input type="radio" name="radioRei" id="idRadioRei" value="rei">
-                                            <label for="idRadioRai">Rainha</label>
-                                            <input type="radio" name="radioRai" id="idRadioRai" value="rainha">
+                                            <div>
+                                                <input type="radio" name="radioAs" id="idRadioAs" value="as">
+                                                <label for="idRadioAs">Ás</label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" name="radioRei" id="idRadioRei" value="rei">
+                                                <label for="idRadioRei">Rei</label>
+                                            </div>
+                                            <div>
+                                                <input type="radio" name="radioRai" id="idRadioRai" value="rainha">
+                                                <label for="idRadioRai">Rainha</label>
+                                            </div>
                                         </div>
                                 </fieldset>
                                 <div>
@@ -157,7 +175,7 @@
 
                     <div>
                         <h3>Sistema de Gestão Acadêmica</h3>
-                        <fieldset>
+                        <fieldset class="manutencao">
                             <legend>Manutenção dos Usuários do Sistema Interno</legend>
                             <div>
                                 <form action="./dados.html" method="GET">
@@ -178,12 +196,18 @@
                                     </div>
                                     <div>
                                         <label for="">Tipo</label>
-                                        <input type="radio" name="radioTec" id="idRadioTec" value="tec">
-                                        <label for="idRadioTec">Técnico</label>
-                                        <input type="radio" name="radioProf" id="idRadioProf" value="prof">
-                                        <label for="idRadioProf">Professor</label>
-                                        <input type="radio" name="radioAlu" id="idRadioAlu" value="aluno">
-                                        <label for="idRadioAlu">Aluno</label>
+                                        <div>
+                                            <input type="radio" name="radioTec" id="idRadioTec" value="tec">
+                                            <label for="idRadioTec">Técnico</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="radioProf" id="idRadioProf" value="prof">
+                                            <label for="idRadioProf">Professor</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="radioAlu" id="idRadioAlu" value="aluno">
+                                            <label for="idRadioAlu">Aluno</label>
+                                        </div>
                                     </div>
                                     <div>
                                         <label for="idData">Data Criação</label>
@@ -191,10 +215,14 @@
                                     </div>
                                     <div>
                                         <label for="">Perfil</label>
-                                        <input type="radio" name="radioConv" id="idRadioConv" value="con">
-                                        <label for="idRadioConv">Convidado</label>
-                                        <input type="radio" name="radioAdm" id="idRadioAdm" value="adm">
-                                        <label for="idRadioAdm">Administrador</label>
+                                        <div>
+                                            <input type="radio" name="radioConv" id="idRadioConv" value="con">
+                                            <label for="idRadioConv">Convidado</label>
+                                        </div>
+                                        <div>
+                                            <input type="radio" name="radioAdm" id="idRadioAdm" value="adm">
+                                            <label for="idRadioAdm">Administrador</label>
+                                        </div>
                                     </div>
                                     <div>
                                         <label for="idTxtArea">Observações</label>
