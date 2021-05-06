@@ -1,13 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Cousine:ital@1&display=swap');
 
+html {
+    font-size: 16px;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
 #container {
     margin: 0 10%;
     font-family: 'Cousine', monospace;
     background-color: #fec59e;
+    font-size: 10px;
+}
+
+h1 {
+    font-size: 1.5rem;
 }
 
 img {
     width: 100%;
+    max-width: 100%;
+    min-width: 50%;
 }
 
 li {
@@ -19,7 +36,6 @@ li {
 
 .menu {
     background-color: #ff9364;
-    margin-top: -5px;
     padding: 10px;
 }
 
@@ -31,12 +47,33 @@ a {
 fieldset {
     margin-top: 50px;
     margin-bottom: 50px;
+    font-size: 1.3rem;
 }
 
-.dadosP, .dadosPro, .metodosP, .manutencao {
+.dadosP,
+.dadosPro,
+.metodosP,
+.manutencao {
     background-color: #ffefd7;
 }
 
 .titulo {
     margin-top: -8px;
+}
+
+input[type=text],
+select {
+    width: 40vw;
+    margin: 0.5vh 0;
+    padding: 1% 0;
+
+}
+
+label {
+    display: block;
+}
+
+.dadosPro label,
+.metodosP label {
+    display: inline;
 }

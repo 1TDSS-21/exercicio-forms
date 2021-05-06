@@ -6,33 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
     <link rel="stylesheet" href="./css/style.css" type="text/css">
+
+    <style>
+        @media screen {
+            body {
+                color: #1e90ff;
+            }
+        }
+
+        @media print {
+            body {
+                color: #dc143c;
+            }
+        }
+    </style>
+
+
+
 </head>
 
 <body>
+
     <div id="container">
+
         <div>
             <header id="cabecalho">
                 <img src="./img/banner-form-1.jpg" alt="Colagem de animais como gatos e cachorros" title="Animais"
                     class="logo">
-            </header>
-            <div>
-                <section class="menu">
+                <nav class="menu">
                     <ul>
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Sobre</a></li>
                         <li><a href="#">Notícias</a></li>
                         <li><a href="#">Contato</a></li>
                     </ul>
+                </nav>
+            </header>
+            <div>
+                <section>
+
                 </section>
             </div>
             <div>
                 <section id="conteudo">
                     <div class="box">
                         <div>
-                            <fieldset class="dadosP">
-                                <legend>Dados Pessoais</legend>
-                                <div>
-                                    <form action="./dados.html" method="GET">
+
+                            <div>
+                                <form action="./dados.html" method="GET">
+                                    <fieldset class="dadosP">
+                                        <legend>Dados Pessoais</legend>
                                         <div>
                                             <label for="idTxtNm">Nome</label>
                                             <input type="text" name="txtNm" id="idTxtNm"
@@ -52,8 +75,9 @@
                                                 <option value="ba">Bahia</option>
                                             </select>
                                         </div>
-                                </div>
-                            </fieldset>
+                                    </fieldset>
+                            </div>
+
                         </div>
                         <div>
                             <fieldset class="dadosPro">
